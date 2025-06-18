@@ -1,4 +1,4 @@
-# 🩺 Diabetes Prediction App
+# 🩺 Diabetes Prediction App  
 https://diabetespredictionapp-ilginphr.streamlit.app/
 
 This is a simple machine learning web app that predicts whether a person is likely to have diabetes based on health information such as glucose level, BMI, age, and family history.
@@ -46,17 +46,21 @@ The app is built using Python, trained with a logistic regression model, and dep
 ## 📌 How to Run Locally
 
 1. Clone the repository:
-
-```bash
-git clone https://github.com/ilginphr/diabetes_prediction_app.git
-cd diabetes_prediction_app
-
-## 🚀 How to Run Locally
-
-1. Clone the repository:
    ```bash
    git clone https://github.com/ilginphr/diabetes_prediction_app.git
    cd diabetes_prediction_app
+   ```
+2. Install requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the app:
+   ```bash
+   streamlit run app.py
+   ```
+
+---
+
 ## 🚧 Deployment Note
 
 In the initial version, the model was trained and saved using `pickle` in a separate `model.py` file, and then loaded into the Streamlit app via a `.pkl` file.  
@@ -66,3 +70,16 @@ However, when deployed on **Streamlit Cloud**, this approach caused loading issu
 ### ✅ Solution:
 The model training process was moved directly into the `model.py` file, and the Streamlit app (`app.py`) now imports the trained model from there, ensuring full compatibility with cloud-based deployment.
 
+---
+
+## 🧩 Scrum Methodology (Simplified)
+
+This project was developed in a single day with the help of AI tools (ChatGPT), and later structured into 3 basic sprints to demonstrate understanding of Agile/Scrum practices.
+
+| Sprint    | Goal                                                  |
+|-----------|-------------------------------------------------------|
+| Sprint 1  | Project idea defined and dataset prepared             |
+| Sprint 2  | Logistic Regression model trained in `model.py`       |
+| Sprint 3  | Streamlit app built, tested, and deployed on the web  |
+
+> Scrum artifacts (e.g., backlog, stand-up notes) are documented in `SCRUM.md` in this repository.
