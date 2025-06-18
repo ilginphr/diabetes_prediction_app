@@ -1,4 +1,5 @@
 # 🩺 Diabetes Prediction App
+https://diabetespredictionapp-ilginphr.streamlit.app/
 
 This is a simple machine learning web app that predicts whether a person is likely to have diabetes based on health information such as glucose level, BMI, age, and family history.
 
