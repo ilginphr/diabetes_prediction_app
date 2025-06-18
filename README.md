@@ -57,3 +57,12 @@ cd diabetes_prediction_app
    ```bash
    git clone https://github.com/ilginphr/diabetes_prediction_app.git
    cd diabetes_prediction_app
+## 🚧 Deployment Note
+
+In the initial version, the model was trained and saved using `pickle` in a separate `model.py` file, and then loaded into the Streamlit app via a `.pkl` file.  
+
+However, when deployed on **Streamlit Cloud**, this approach caused loading issues — the app could not access the pickled model file properly.
+
+### ✅ Solution:
+The model training process was moved directly into the `model.py` file, and the Streamlit app (`app.py`) now imports the trained model from there, ensuring full compatibility with cloud-based deployment.
+
